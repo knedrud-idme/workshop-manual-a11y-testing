@@ -28,5 +28,15 @@ function load() {
     document.addEventListener('click', (event) => {
         resetSubmenus(event)
     })
+
+    submenus.forEach(submenu => {
+        submenu.addEventListener('keyup', (event) => {
+            if (event.key === 'Escape') {
+                resetSubmenus({});
+                // bring focus back to menu toggle button
+                submenu.querySelector('.megamenu-navitem').focus();
+            }
+        })
+    })
 }
 document.addEventListener('DOMContentLoaded', load)

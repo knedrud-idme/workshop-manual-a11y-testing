@@ -1,7 +1,6 @@
 /* The basics */
 * {
     box-sizing: border-box;
-    outline: 0;
 }
 html, body {
     margin: 0;
@@ -42,6 +41,10 @@ h4, h5, h6 {
 a, a:link {
     color: var(--color-link);
 }
-a:hover {
+a:focus, a:hover {
     color: var(--color-link-hover);
+}
+a:focus, button:focus {
+    outline: 2px solid var(--color-link-hover);
+    outline-offset: 2px;
 }
