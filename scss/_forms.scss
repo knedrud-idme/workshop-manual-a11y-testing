@@ -56,6 +56,11 @@
     border-width: 1px;
     font-family: inherit;
     line-height: 2;
+
+    &:focus {
+        outline: 2px solid var(--color-link-hover);
+        outline-offset: 2px;
+    }
 }
 .form-field input[type="text"],
 .form-field input[type="number"],
@@ -91,7 +96,7 @@
         width: 1em;
         transform-origin: bottom left;
     }
-      
+
     &:checked:before {
         transform: scale(1);
     }
