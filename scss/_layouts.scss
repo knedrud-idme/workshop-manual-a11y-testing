@@ -6,6 +6,7 @@
 }
 .layout {
     margin: 0em auto;
+    max-width: 100%;
     padding: 4em 0.5em;
     width: var(--width-inset);
 }
@@ -79,4 +80,11 @@
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 1em;
+}
+
+@media screen and (max-width: 780px) {
+    [class*='two-parts'],
+    .three-parts {
+        display: block;
+    }
 }
