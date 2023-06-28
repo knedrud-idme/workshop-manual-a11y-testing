@@ -5,7 +5,14 @@
     background-position: top center;
     background-size: contain;
     min-height: 640px;
+
+    @media screen and (max-width: 940px) {
+        background-size: cover;
+        min-height: auto;
+        padding-bottom: 50%;
+    }
 }
+
 #home-form {
     background-color: var(--bgcolor-form);
     border-radius: 3px;
