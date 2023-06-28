@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>CampSpots</title>
         <link rel="stylesheet" type="text/css" href="./styles.scss" />
     </head>
     <body class="page-home">
         <include src="_includes/header.html"></include>
-        <div id="main">
+        <main id="main">
+            <h1 class="visually-hidden">Find your next camping adventure</h1>
             <form class="main-search form-wrap layout" id="home-form">
                 <div class="form-field">
-                    <span class="label">Where to?</span>
+                    <label class="label" for="place-search">Where to?</label>
                     <div class="custom-input">
                         <span class="icon-lookingglass"></span>
                         <input type="text" id="place-search" placeholder="Try Oregon, Colorado..." />
                     </div>
                 </div>
                 <div class="form-field">
-                    <span class="label">Dates</span>
+                    <label class="label" for="date-search">Dates</label>
                     <div class="custom-input">
                         <span class="icon-calendar"></span>
                         <input type="text" id="date-search" placeholder="Enter dates" />
@@ -24,15 +25,15 @@
                 </div>
                 <div class="form-field form-submit">
                     <button class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');">
-                        <span class="icon-lookingglass-white"></span>
+                        <span class="visually-hidden">Search</span><span class="icon-lookingglass-white"></span>
                     </button>
                 </div>
             </form>
             <div class="wide-layout two-part-overlap">
                 <div class="content-block-wrap">
-                    <img src="images/tents.jpg">
+                    <img src="images/tents.jpg" alt="Tents in an open field of grass with the sun setting behind them">
                     <div class="content-block">
-                        <h3>Rest and relaxation is a part of life</h3>
+                        <h2>Rest and relaxation is a part of life</h3>
                         <div>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</div>
 
                         <div>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</div>
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div class="link-block">
-                    <h4>Places to visit</h4>
+                    <h3>Places to visit</h3>
                     <div class="link-list">
                         <div>
                             <a href="#">New York</a>
@@ -56,24 +57,27 @@
                     </div>
                 </div>
             </div>
-            <div class="layout three-parts">
-                <div class="item green">
-                    <img src="/images/icons/icon-treetag.svg" />
-                    <div class="header">Find your next adventure</div>
-                    <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <section class="layout">
+                <h2>What are you waiting for?</h2>
+                <div class="three-parts">
+                    <div class="item green">
+                        <img src="/images/icons/icon-treetag.svg" alt="" />
+                        <h3 class="header">Find your next adventure</h3>
+                        <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="item yellow">
+                        <img src="/images/icons/icon-backpack.svg" alt="" />
+                        <h3 class="header">Know what to pack and what to leave at home</h3>
+                        <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="item blue">
+                        <img src="/images/icons/icon-kayak.svg" alt="" />
+                        <h3 class="header">Arrange the best activities</h3>
+                        <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
                 </div>
-                <div class="item yellow">
-                    <img src="/images/icons/icon-backpack.svg" />
-                    <div class="header">Know what to pack and what to leave at home</div>
-                    <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-                <div class="item blue">
-                    <img src="/images/icons/icon-kayak.svg" />
-                    <div class="header">Arrange the best activities</div>
-                    <div>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-                </div>
-            </div>
-        </div>
+            </section>
+        </main>
         <include src="_includes/footer.html"></include>
         <script src="/js/menu.js"></script>
     </body>
