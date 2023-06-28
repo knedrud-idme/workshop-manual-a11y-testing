@@ -122,6 +122,9 @@
     position: absolute;
     width: 0;
 }
+.megamenu-section h2 {
+    margin: 0;
+}
 .megamenu-submenu-group {
     margin: 2em;
 }
@@ -150,6 +153,7 @@
     margin-right: 0.5em;
 }
 .megamenu-submenu-header {
+    font-size: inherit;
     font-weight: bold;
     margin-bottom: 1em;
     text-transform: uppercase;
